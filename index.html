@@ -1,16 +1,80 @@
-<!DOCTYPE html>
-<html lang="EN">
-	<meta charset="utf-8">
-	<title> Hello 2</title>
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="js\bootstrap.js"></script>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<title>Веб приложение</title>
+	</head>
 	<body>
-		<form action="1.php" method="POST">
-		  <div><label for="firstname"> Name;&nbsp;&nbsp;&nbsp;&nbsp;
-			<input type="text" name="firstname" id="firstname"></label>
-		  </div>
-		  <div><label for="lastname"> Family:
-			<input type="text" name="lastname" id="lastname"></label>
-		  </div>
-		  <div><input type="submit" value="Run"></div>
-		</form>
+		<div class="panelleft">
+	    		<div class="tabs">
+		        	<ul class="tab-nav">
+	            			<li><a href="#section1" class="active">Каталог</a>
+		
+		            		</li>
+		            		<li><a href="#section2">Новости</a>
+		
+		            		</li>
+		            		<li><a href="#section3">Регистрация</a>
+		
+		            		</li>
+	        		</ul>
+			</div>
+		</div>
+		<div class="input-group text-black">
+		    <input class="input text-black" type="text" placeholder="Login" />
+		    <input class="input text-black" type="text" placeholder="Password" />
+		    <button id="loginright" class="btn btn-dark" type="submit" value="Enter">Enter</button>
+		</div>
+		<div class="menu">
+			<a class="triggerleft" href="#"></a>
+		
+			<a class="triggerright" href="#"></a>
+		
+		</div>
+		<hr>
+		<div class="tabs">
+	    		<div class="tab-content">
+		        	<div class="section" id="section1">
+		            		<table>
+				                <tr class="insert">
+				                    <th>Имя</th>
+				                    <th>Логин</th>
+				                    <th>Email</th>
+				                </tr>
+				                <tr>
+				                    <td>Алексей</td>
+				                    <td>Тео</td>
+				                    <td>7e0@mail.ru</td>
+				                </tr>
+		            		</table>
+		        	</div>
+			        <div class="section" id="section2">
+			            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			        </div>
+			        <div class="section" id="section3">
+			            <div class="inputframe">
+			                <label class="labelinput">Имя</label>
+			                <input id="textname" class="logininput" type="text" />
+			            </div>
+			            <div class="inputframe">
+			                <label class="labelinput">Email</label>
+			                <input id="textemail" class="logininput" type="text" />
+			            </div>
+			            <div class="inputframe">
+			                <label class="labelinput">Логин</label>
+			                <input id="textlogin" class="logininput" type="text" />
+			            </div>
+			            <div class="inputframe">
+			                <label class="labelinput">Пароль</label>
+			                <input id="textpassword" class="logininput" />
+			            </div>
+			            <button type="submit" class="btn btn-dark">Отправить</button>
+			        </div>
+	    		</div>
+		</div>
 	</body>
 </html>
